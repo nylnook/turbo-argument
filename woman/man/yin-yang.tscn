@@ -1,0 +1,57 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://anim/3-yin-yang0000.png" type="Texture" id=1]
+[ext_resource path="res://anim/3-yin-yang0001.png" type="Texture" id=2]
+[ext_resource path="res://anim/3-yin-yang0002.png" type="Texture" id=3]
+[ext_resource path="res://ui/retry.tscn" type="PackedScene" id=4]
+[ext_resource path="res://ui/HUD.tscn" type="PackedScene" id=5]
+[ext_resource path="res://ui/HUD2.tscn" type="PackedScene" id=6]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 1 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 6.0
+} ]
+
+[node name="yin-yang" type="Node2D"]
+
+[node name="bg" type="ColorRect" parent="."]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1280.0
+margin_bottom = 720.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0, 0, 0, 1 )
+_sections_unfolded = [ "Rect" ]
+
+[node name="Animatedyinyang" type="AnimatedSprite" parent="."]
+
+position = Vector2( 616.555, 279.717 )
+frames = SubResource( 1 )
+animation = "default"
+frame = 2
+playing = true
+_sections_unfolded = [ "Transform" ]
+
+[node name="retry" parent="." instance=ExtResource( 4 )]
+
+position = Vector2( 0, 0.999268 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="HUD" parent="." instance=ExtResource( 5 )]
+
+[node name="HUD2" parent="." instance=ExtResource( 6 )]
+
+position = Vector2( 0.999634, 3.99707 )
+
+

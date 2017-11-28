@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://main.gd" type="Script" id=1]
+[ext_resource path="res://intro.tscn" type="PackedScene" id=2]
+[ext_resource path="res://ui/tuto.tscn" type="PackedScene" id=3]
+[ext_resource path="res://ui/start-menu.tscn" type="PackedScene" id=4]
+[ext_resource path="res://ui/HUD.tscn" type="PackedScene" id=5]
+
+[node name="main" type="Node2D"]
+
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="intro" parent="." instance=ExtResource( 2 )]
+
+[node name="tuto" parent="." instance=ExtResource( 3 )]
+
+visible = false
+
+[node name="start-menu" parent="." instance=ExtResource( 4 )]
+
+[node name="HUD" parent="." instance=ExtResource( 5 )]
+
+[connection signal="hide" from="start-menu" to="." method="_on_startmenu_hide"]
+
+

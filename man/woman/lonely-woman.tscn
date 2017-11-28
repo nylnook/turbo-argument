@@ -1,0 +1,56 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://anim/3-lonely-woman0000.png" type="Texture" id=1]
+[ext_resource path="res://anim/3-lonely-woman0001.png" type="Texture" id=2]
+[ext_resource path="res://anim/3-lonely-woman0005.png" type="Texture" id=3]
+[ext_resource path="res://anim/3-lonely-woman0006.png" type="Texture" id=4]
+[ext_resource path="res://anim/3-lonely-woman0007.png" type="Texture" id=5]
+[ext_resource path="res://anim/3-lonely-woman0008.png" type="Texture" id=6]
+[ext_resource path="res://anim/3-lonely-woman0009.png" type="Texture" id=7]
+[ext_resource path="res://ui/retry.tscn" type="PackedScene" id=8]
+[ext_resource path="res://ui/HUD.tscn" type="PackedScene" id=9]
+[ext_resource path="res://ui/HUD2.tscn" type="PackedScene" id=10]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "default",
+"speed": 6.0
+} ]
+
+[node name="lonely-woman" type="Node2D"]
+
+[node name="bg" type="ColorRect" parent="."]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1280.0
+margin_bottom = 720.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0, 0, 0, 1 )
+_sections_unfolded = [ "Rect" ]
+
+[node name="lonely-woman-anim" type="AnimatedSprite" parent="."]
+
+position = Vector2( 640, 360 )
+frames = SubResource( 1 )
+animation = "default"
+frame = 1
+playing = true
+_sections_unfolded = [ "Transform" ]
+
+[node name="retry" parent="." instance=ExtResource( 8 )]
+
+[node name="HUD" parent="." instance=ExtResource( 9 )]
+
+[node name="HUD2" parent="." instance=ExtResource( 10 )]
+
+

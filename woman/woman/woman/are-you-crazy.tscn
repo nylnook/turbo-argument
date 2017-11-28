@@ -1,0 +1,442 @@
+[gd_scene load_steps=78 format=2]
+
+[ext_resource path="res://woman/woman/woman/are-you-crazy.gd" type="Script" id=1]
+[ext_resource path="res://ui/background.tscn" type="PackedScene" id=2]
+[ext_resource path="res://anim/4-areyoucrazy-man0000.png" type="Texture" id=3]
+[ext_resource path="res://anim/4-areyoucrazy-man0001.png" type="Texture" id=4]
+[ext_resource path="res://anim/4-areyoucrazy-man0002.png" type="Texture" id=5]
+[ext_resource path="res://anim/4-areyoucrazy-man0003.png" type="Texture" id=6]
+[ext_resource path="res://anim/4-areyoucrazy-man0004.png" type="Texture" id=7]
+[ext_resource path="res://anim/4-areyoucrazy-man0005.png" type="Texture" id=8]
+[ext_resource path="res://anim/4-areyoucrazy-man0006.png" type="Texture" id=9]
+[ext_resource path="res://anim/4-areyoucrazy-man0007.png" type="Texture" id=10]
+[ext_resource path="res://anim/4-areyoucrazy-man0008.png" type="Texture" id=11]
+[ext_resource path="res://anim/4-areyoucrazy-man0009.png" type="Texture" id=12]
+[ext_resource path="res://anim/4-areyoucrazy-man0010.png" type="Texture" id=13]
+[ext_resource path="res://anim/4-areyoucrazy-man0011.png" type="Texture" id=14]
+[ext_resource path="res://anim/4-areyoucrazy-man0012.png" type="Texture" id=15]
+[ext_resource path="res://anim/4-areyoucrazy-dragon0000.png" type="Texture" id=16]
+[ext_resource path="res://anim/4-areyoucrazy-dragon0001.png" type="Texture" id=17]
+[ext_resource path="res://anim/4-areyoucrazy-dragon0002.png" type="Texture" id=18]
+[ext_resource path="res://anim/4t-youarenot-dragon0000.png" type="Texture" id=19]
+[ext_resource path="res://anim/4t-youarenot-dragon0001.png" type="Texture" id=20]
+[ext_resource path="res://anim/4t-youarenot-dragon0002.png" type="Texture" id=21]
+[ext_resource path="res://anim/4t-youarenot-dragon0003.png" type="Texture" id=22]
+[ext_resource path="res://anim/4t-youarenot-dragon0004.png" type="Texture" id=23]
+[ext_resource path="res://anim/4t-youarenot-dragon0005.png" type="Texture" id=24]
+[ext_resource path="res://anim/4t-youarenot-dragon0006.png" type="Texture" id=25]
+[ext_resource path="res://anim/4t-youarenot-dragon0007.png" type="Texture" id=26]
+[ext_resource path="res://anim/4t-youarenot-dragon0008.png" type="Texture" id=27]
+[ext_resource path="res://anim/4t-blow-the-pain-frame-3.png" type="Texture" id=28]
+[ext_resource path="res://anim/4t-blow-the-pain-frame-2.png" type="Texture" id=29]
+[ext_resource path="res://anim/4t-blow-the-pain-frame-1.png" type="Texture" id=30]
+[ext_resource path="res://anim/4t-blow-the-pain-discover.png" type="Texture" id=31]
+[ext_resource path="res://anim/4t-blow-the-pain-discover-bg.png" type="Texture" id=32]
+[ext_resource path="res://anim/4t-blow-the-pain-touch.png" type="Texture" id=33]
+[ext_resource path="res://anim/4t-blow-the-pain0002.png" type="Texture" id=34]
+[ext_resource path="res://anim/4t-blow-the-pain0003.png" type="Texture" id=35]
+[ext_resource path="res://anim/4t-blow-the-pain0004.png" type="Texture" id=36]
+[ext_resource path="res://anim/4t-blow-the-pain0005.png" type="Texture" id=37]
+[ext_resource path="res://anim/4t-blow-the-pain0006.png" type="Texture" id=38]
+[ext_resource path="res://anim/4t-blow-the-pain0007.png" type="Texture" id=39]
+[ext_resource path="res://anim/4t-blow-the-pain0008.png" type="Texture" id=40]
+[ext_resource path="res://anim/4t-blow-the-pain0009.png" type="Texture" id=41]
+[ext_resource path="res://anim/4t-blow-the-pain0010.png" type="Texture" id=42]
+[ext_resource path="res://anim/4t-blow-the-pain0011.png" type="Texture" id=43]
+[ext_resource path="res://anim/4t-blow-the-pain0012.png" type="Texture" id=44]
+[ext_resource path="res://anim/4t-blow-the-pain0013.png" type="Texture" id=45]
+[ext_resource path="res://anim/4t-blow-the-pain0014.png" type="Texture" id=46]
+[ext_resource path="res://anim/4t-blow-the-pain0015.png" type="Texture" id=47]
+[ext_resource path="res://anim/4t-blow-the-pain0016.png" type="Texture" id=48]
+[ext_resource path="res://anim/4t-blow-the-pain0017.png" type="Texture" id=49]
+[ext_resource path="res://anim/4t-blow-the-pain0018.png" type="Texture" id=50]
+[ext_resource path="res://anim/4t-blow-the-pain0019.png" type="Texture" id=51]
+[ext_resource path="res://anim/4t-blow-the-pain0020.png" type="Texture" id=52]
+[ext_resource path="res://anim/4t-blow-the-pain0021.png" type="Texture" id=53]
+[ext_resource path="res://anim/4t-blow-the-pain0022.png" type="Texture" id=54]
+[ext_resource path="res://anim/4t-blow-the-pain0023.png" type="Texture" id=55]
+[ext_resource path="res://anim/4t-blow-the-pain0024.png" type="Texture" id=56]
+[ext_resource path="res://anim/4t-blow-the-pain0025.png" type="Texture" id=57]
+[ext_resource path="res://anim/4t-blow-the-pain0026.png" type="Texture" id=58]
+[ext_resource path="res://anim/4t-blow-the-pain0027.png" type="Texture" id=59]
+[ext_resource path="res://anim/4t-blow-the-pain0028.png" type="Texture" id=60]
+[ext_resource path="res://anim/4t-blow-the-pain0029.png" type="Texture" id=61]
+[ext_resource path="res://anim/4t-blow-the-pain0030.png" type="Texture" id=62]
+[ext_resource path="res://anim/4t-blow-the-pain0031.png" type="Texture" id=63]
+[ext_resource path="res://anim/4t-blow-the-pain0032.png" type="Texture" id=64]
+[ext_resource path="res://ui/repeat-tuto.tscn" type="PackedScene" id=65]
+[ext_resource path="res://ui/HUD.tscn" type="PackedScene" id=66]
+[ext_resource path="res://ui/HUD2.tscn" type="PackedScene" id=67]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 15 ), ExtResource( 15 ), ExtResource( 15 ), ExtResource( 15 ), ExtResource( 15 ), ExtResource( 15 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 6.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+
+animations = [ {
+"frames": [ ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 17 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 17 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "default",
+"speed": 6.0
+} ]
+
+[sub_resource type="SpriteFrames" id=3]
+
+animations = [ {
+"frames": [ ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ) ],
+"loop": false,
+"name": "default",
+"speed": 6.0
+} ]
+
+[sub_resource type="Animation" id=14]
+
+resource_name = "frame4"
+length = 0.1
+loop = false
+step = 0.1
+
+[sub_resource type="Animation" id=10]
+
+resource_name = "frame3"
+length = 2.0
+loop = false
+step = 0.1
+
+[sub_resource type="Animation" id=11]
+
+resource_name = "frame2"
+length = 2.0
+loop = false
+step = 0.1
+
+[sub_resource type="Animation" id=5]
+
+resource_name = "frame1"
+length = 2.0
+loop = false
+step = 0.1
+
+[sub_resource type="Animation" id=12]
+
+resource_name = "frame5"
+length = 4.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Timer5/DiscoverThePain:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/keys = {
+"times": PoolRealArray( 3.7, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Timer5/curtain:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=13]
+
+resource_name = "frame6"
+length = 2.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Timer6/TouchThePain:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="SpriteFrames" id=9]
+
+animations = [ {
+"frames": [ ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), null, null, null, null, null, null, null, null, null, null, null, null ],
+"loop": false,
+"name": "default",
+"speed": 6.0
+} ]
+
+[node name="are-you-crazy" type="Node2D"]
+
+script = ExtResource( 1 )
+
+[node name="background" parent="." instance=ExtResource( 2 )]
+
+[node name="AreYouCrazy_Man" type="AnimatedSprite" parent="."]
+
+position = Vector2( 309.031, 340.196 )
+frames = SubResource( 1 )
+animation = "default"
+frame = 17
+playing = true
+
+[node name="AreYouCrazy_Dragon" type="AnimatedSprite" parent="."]
+
+position = Vector2( 923.125, 433.848 )
+frames = SubResource( 2 )
+animation = "default"
+frame = 17
+playing = true
+
+[node name="Man_wait" type="Sprite" parent="."]
+
+visible = false
+position = Vector2( 309.876, 340.761 )
+texture = ExtResource( 3 )
+
+[node name="Dragon_you_are_not" type="AnimatedSprite" parent="."]
+
+visible = false
+position = Vector2( 788.309, 348.382 )
+frames = SubResource( 3 )
+animation = "default"
+
+[node name="Timer4" type="AnimationPlayer" parent="."]
+
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
+anims/frame4 = SubResource( 14 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="newbg" type="ColorRect" parent="."]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1280.0
+margin_bottom = 720.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0, 0, 0, 1 )
+_sections_unfolded = [ "Rect" ]
+
+[node name="Timer3" type="AnimationPlayer" parent="."]
+
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
+anims/frame3 = SubResource( 10 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="Frame3" type="Sprite" parent="Timer3"]
+
+visible = false
+position = Vector2( 998, 360 )
+scale = Vector2( 1, 1 )
+texture = ExtResource( 28 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Timer2" type="AnimationPlayer" parent="."]
+
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
+anims/frame2 = SubResource( 11 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="Frame2" type="Sprite" parent="Timer2"]
+
+visible = false
+position = Vector2( 548, 355 )
+scale = Vector2( 1, 1 )
+texture = ExtResource( 29 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Timer1" type="AnimationPlayer" parent="."]
+
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
+anims/frame1 = SubResource( 5 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="Frame1" type="Sprite" parent="Timer1"]
+
+visible = false
+position = Vector2( 183.007, 360 )
+scale = Vector2( 1, 1 )
+texture = ExtResource( 30 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Timer5" type="AnimationPlayer" parent="."]
+
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
+anims/frame5 = SubResource( 12 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="DiscoverThePain" type="Sprite" parent="Timer5"]
+
+visible = false
+position = Vector2( 654.812, 349.306 )
+texture = ExtResource( 31 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="DiscoverThePain_bg" type="Sprite" parent="Timer5"]
+
+visible = false
+position = Vector2( 640, 360 )
+scale = Vector2( 1, 1 )
+texture = ExtResource( 32 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="curtain" type="ColorRect" parent="Timer5"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1280.0
+margin_bottom = 720.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0, 0, 0, 1 )
+_sections_unfolded = [ "Rect", "Visibility" ]
+
+[node name="Timer6" type="AnimationPlayer" parent="."]
+
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
+anims/frame6 = SubResource( 13 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="TouchThePain" type="Sprite" parent="Timer6"]
+
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 682, 511 )
+scale = Vector2( 1, 1 )
+texture = ExtResource( 33 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="BlowThePain" type="AnimatedSprite" parent="."]
+
+visible = false
+position = Vector2( 640, 360 )
+scale = Vector2( 1, 1 )
+frames = SubResource( 9 )
+animation = "default"
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Button_woman" type="TextureButton" parent="."]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 537.0
+margin_top = 165.0
+margin_right = 1281.0
+margin_bottom = 697.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+
+[node name="Button_man" type="TextureButton" parent="."]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 77.0
+margin_top = 86.0
+margin_right = 363.0
+margin_bottom = 639.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+
+[node name="repeat-tuto" parent="." instance=ExtResource( 65 )]
+
+position = Vector2( -221, 30 )
+
+[node name="HUD" parent="." instance=ExtResource( 66 )]
+
+[node name="HUD2" parent="." instance=ExtResource( 67 )]
+
+[connection signal="animation_finished" from="Dragon_you_are_not" to="." method="_on_Dragon_you_are_not_animation_finished"]
+
+[connection signal="animation_finished" from="Timer4" to="." method="_on_Timer4_animation_finished"]
+
+[connection signal="animation_finished" from="Timer3" to="." method="_on_Timer3_animation_finished"]
+
+[connection signal="animation_finished" from="Timer2" to="." method="_on_Timer2_animation_finished"]
+
+[connection signal="animation_finished" from="Timer1" to="." method="_on_Timer1_animation_finished"]
+
+[connection signal="animation_finished" from="Timer5" to="." method="_on_Timer5_animation_finished"]
+
+[connection signal="animation_finished" from="Timer6" to="." method="_on_Timer6_animation_finished"]
+
+[connection signal="animation_finished" from="BlowThePain" to="." method="_on_BlowThePain_animation_finished"]
+
+[connection signal="pressed" from="Button_woman" to="." method="_on_Button_woman_pressed"]
+
+[connection signal="pressed" from="Button_man" to="." method="_on_Button_man_pressed"]
+
+

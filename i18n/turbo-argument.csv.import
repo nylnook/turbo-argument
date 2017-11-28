@@ -1,0 +1,15 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+
+[deps]
+
+files=[ "res://i18n/turbo-argument.en.translation", "res://i18n/turbo-argument.fr.translation" ]
+
+source_md5="4db074f022a03160ac6dca4dddb8790a"
+
+[params]
+
+compress=true
+delimiter=0

@@ -1,0 +1,14 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Stoneworld Battle mono.ogg-3d3347b2fca494b144a241cc4c433d82.oggstr"
+
+[deps]
+
+source_md5="879352eefca897b1e127552ed56ab21a"
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,14 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Carpe Diem mono.ogg-1bb423f65aba54eb4604f4b901f3e88b.oggstr"
+
+[deps]
+
+source_md5="6588b99f325d781350c1f5d4dcce5c65"
+
+[params]
+
+loop=true
+loop_offset=0

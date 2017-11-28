@@ -1,0 +1,209 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://ui/retry.gd" type="Script" id=1]
+[ext_resource path="res://ui/font/chawp20.font" type="BitmapFont" id=2]
+[ext_resource path="res://anim/ui/try-again.png" type="Texture" id=3]
+[ext_resource path="res://anim/ui/clock.png" type="Texture" id=4]
+[ext_resource path="res://anim/ui/minute-hand.png" type="Texture" id=5]
+[ext_resource path="res://anim/ui/hour-hand.png" type="Texture" id=6]
+
+[sub_resource type="Animation" id=1]
+
+resource_name = "retry"
+length = 5.0
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("CanvasLayer/RetryContainer/RetrySprite:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 360.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CanvasLayer/RetryContainer/ClockSprite:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, -720.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CanvasLayer/RetryContainer/HourHandSprite:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -65.0, -425.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CanvasLayer/RetryContainer/MinuteHandSprite:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, -1440.0 ]
+}
+
+[sub_resource type="Animation" id=2]
+
+resource_name = "fade in"
+length = 2.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("CanvasLayer/RetryContainer:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[node name="retry" type="Node2D"]
+
+script = ExtResource( 1 )
+_sections_unfolded = [ "Material", "Visibility" ]
+
+[node name="RetryAnimation" type="AnimationPlayer" parent="."]
+
+pause_mode = 2
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
+anims/retry = SubResource( 1 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "retry"
+_sections_unfolded = [ "Pause", "Playback Options", "playback" ]
+
+[node name="FadeInAnimation" type="AnimationPlayer" parent="."]
+
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
+"anims/fade in" = SubResource( 2 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "fade in"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+layer = 3
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+
+[node name="RetryContainer" type="Container" parent="CanvasLayer"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Visibility" ]
+
+[node name="QuestionLabel" type="Label" parent="CanvasLayer/RetryContainer"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 992.0
+margin_top = 373.0
+margin_right = 1196.0
+margin_bottom = 439.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+custom_constants/shadow_as_outline = 2
+text = "END"
+align = 1
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors", "custom_constants", "custom_fonts" ]
+
+[node name="RetrySprite" type="Sprite" parent="CanvasLayer/RetryContainer"]
+
+position = Vector2( 1089.59, 536.472 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="ClockSprite" type="Sprite" parent="CanvasLayer/RetryContainer"]
+
+position = Vector2( 1089.59, 536.472 )
+texture = ExtResource( 4 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="MinuteHandSprite" type="Sprite" parent="CanvasLayer/RetryContainer"]
+
+position = Vector2( 1089.92, 536.262 )
+texture = ExtResource( 5 )
+offset = Vector2( -0.332031, -12.6932 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="HourHandSprite" type="Sprite" parent="CanvasLayer/RetryContainer"]
+
+position = Vector2( 1090.11, 536.649 )
+rotation = -1.13446
+texture = ExtResource( 6 )
+offset = Vector2( 8.95734, -0.177246 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="RetryButton" type="TextureButton" parent="CanvasLayer/RetryContainer"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1002.0
+margin_top = 448.0
+margin_right = 1182.0
+margin_bottom = 625.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+_sections_unfolded = [ "Rect" ]
+
+[connection signal="pressed" from="CanvasLayer/RetryContainer/RetryButton" to="." method="_on_RetryButton_pressed"]
+
+

@@ -1,0 +1,23 @@
+id,en,fr
+TITLE,Turbo argument,Turbo dispute
+CLICK_ME,Click me to start,Cliquez ici pour commencer
+ENGLISH,English (Anglais),Anglais (English)
+FRENCH,French (Français),Français (French)
+TUTO,"When the moment is suspended, click one of the characters to make the story evolve", "Quand l'instant est suspendu, clic sur un des personnages pour faire évoluer l'histoire"
+TUTO_EXPLANATION,The grandson of Captain Haddock and the niece of the Grumphy Smurf made the mistake to go as a couple. Explore the possibles ends of this conflict!,Le petit-fils du Capitaine Haddock et la nièce du Schtroumpf Grognon ont fait l'erreur de se mettre en couple. Explore les fins possibles de ce conflit !
+REPEAT_TUTO, It's your turn!, À vous de jouer !
+END,Is this the best end ?,Est-ce la meilleure fin ?
+RESTART,"Here we go again, back in time...",Nous voilà de retour dans le temps...
+BY,by nylnook (www.nylnook.art),par nylnook (www.nylnook.art)
+LICENSE,Licensed under Creative Commons by-sa 4.0,sous licence Creative Commons by-sa 4.0
+LICENSE_URL,creativecommons.org/licenses/by-sa/4.0/,creativecommons.org/licenses/by-sa/4.0/
+MUSIC,Music,Musique
+MUSIC_NAME,"''Stoneworld Battle'' and ''Carpe Diem'' by Kevin MacLeod (incompetech.com)","''Stoneworld Battle'' et ''Carpe Diem'' de Kevin MacLeod (incompetech.com)"
+MUSIC_LICENSE,Licensed under Creative Commons: By Attribution 3.0 License,sous licence Creative Commons by 3.0
+MUSIC_LICENSE_URL,creativecommons.org/licenses/by/3.0/,creativecommons.org/licenses/by/3.0/
+FONT,Font,Police
+FONT_BY,"chawp by AWP (www.awpny.com), SIL Open Font License","chawp de AWP (www.awpny.com), Licence de police libre SIL"
+MADE_WITH,Made with Krita 3.3.2 and the Godot Game Engine 3.0 alpha 2,Fait avec Krita 3.3.2 et le moteur de jeu Godot 3.0 alpha 2
+MADE_FOR,for Angoulême Comic Festival Digital Challenge 2018, pour le Challenge Digital du Festival de la BD d'Angoulême 2018
+THANKS,"Thanks to my tippers on www.tipeee.com/nylnook, to the Godot contributors,","Merci à mes tipeurs sur www.tipeee.com/nylnook, à tous les contributeurs de Godot, et"
+THANKS_BIS,"and particularly to Leon Krause (a.k.a Eska014) for his work on HTML5/WebAssembly export","en particulier à Leon Krause (a.k.a Eska014) pour son travail sur l'export en HTML5/WebAssembly"

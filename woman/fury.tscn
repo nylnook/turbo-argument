@@ -1,0 +1,560 @@
+[gd_scene load_steps=127 format=2]
+
+[ext_resource path="res://woman/fury.gd" type="Script" id=1]
+[ext_resource path="res://ui/background.tscn" type="PackedScene" id=2]
+[ext_resource path="res://anim/2-fury-woman0000.png" type="Texture" id=3]
+[ext_resource path="res://anim/2-fury-woman0001.png" type="Texture" id=4]
+[ext_resource path="res://anim/2-fury-woman0002.png" type="Texture" id=5]
+[ext_resource path="res://anim/2-fury-woman0003.png" type="Texture" id=6]
+[ext_resource path="res://anim/2-fury-woman0004.png" type="Texture" id=7]
+[ext_resource path="res://anim/2-fury-woman0005.png" type="Texture" id=8]
+[ext_resource path="res://anim/2-fury-man0000.png" type="Texture" id=9]
+[ext_resource path="res://anim/2-fury-man0001.png" type="Texture" id=10]
+[ext_resource path="res://anim/2-fury-man0002.png" type="Texture" id=11]
+[ext_resource path="res://anim/2-fury-man0003.png" type="Texture" id=12]
+[ext_resource path="res://anim/2-fury-man0004.png" type="Texture" id=13]
+[ext_resource path="res://anim/2-fury-man0005.png" type="Texture" id=14]
+[ext_resource path="res://anim/2t-sorry-man0000.png" type="Texture" id=15]
+[ext_resource path="res://anim/2t-sorry-man0001.png" type="Texture" id=16]
+[ext_resource path="res://anim/2t-sorry-man0002.png" type="Texture" id=17]
+[ext_resource path="res://anim/2t-sorry-man0003.png" type="Texture" id=18]
+[ext_resource path="res://anim/2t-sorry-man0004.png" type="Texture" id=19]
+[ext_resource path="res://anim/2t-sorry-man0005.png" type="Texture" id=20]
+[ext_resource path="res://anim/2t-sorry-man0006.png" type="Texture" id=21]
+[ext_resource path="res://anim/2t-sorry-man0007.png" type="Texture" id=22]
+[ext_resource path="res://anim/2t-sorry-man0008.png" type="Texture" id=23]
+[ext_resource path="res://anim/2t-sorry-man0009.png" type="Texture" id=24]
+[ext_resource path="res://anim/2t-sorry-woman0000.png" type="Texture" id=25]
+[ext_resource path="res://anim/2t-sorry-woman0001.png" type="Texture" id=26]
+[ext_resource path="res://anim/2t-sorry-woman0002.png" type="Texture" id=27]
+[ext_resource path="res://anim/2t-sorry-woman0003.png" type="Texture" id=28]
+[ext_resource path="res://anim/2t-sorry-woman0004.png" type="Texture" id=29]
+[ext_resource path="res://anim/2t-sorry-woman0005.png" type="Texture" id=30]
+[ext_resource path="res://anim/2t-sorry-woman0006.png" type="Texture" id=31]
+[ext_resource path="res://anim/2t-sorry-woman0007.png" type="Texture" id=32]
+[ext_resource path="res://anim/2t-sorry-woman0008.png" type="Texture" id=33]
+[ext_resource path="res://anim/2t-sorry-woman0009.png" type="Texture" id=34]
+[ext_resource path="res://anim/2t-sorry-woman0010.png" type="Texture" id=35]
+[ext_resource path="res://anim/2t-sorry-woman0011.png" type="Texture" id=36]
+[ext_resource path="res://anim/2t-sorry-man-love.png" type="Texture" id=37]
+[ext_resource path="res://anim/2t-sorry-woman-love.png" type="Texture" id=38]
+[ext_resource path="res://anim/2t-sorry-central0001.png" type="Texture" id=39]
+[ext_resource path="res://anim/2t-sorry-central0002.png" type="Texture" id=40]
+[ext_resource path="res://anim/2t-sorry-central0003.png" type="Texture" id=41]
+[ext_resource path="res://anim/2t-sorry-central0004.png" type="Texture" id=42]
+[ext_resource path="res://anim/2t-sorry-central0005.png" type="Texture" id=43]
+[ext_resource path="res://anim/2t-sorry-central0006.png" type="Texture" id=44]
+[ext_resource path="res://anim/2t-sorry-central0007.png" type="Texture" id=45]
+[ext_resource path="res://anim/2t-sorry-central0008.png" type="Texture" id=46]
+[ext_resource path="res://anim/2t-sorry-central0009.png" type="Texture" id=47]
+[ext_resource path="res://anim/2t-sorry-central0010.png" type="Texture" id=48]
+[ext_resource path="res://anim/2t-sorry-central0011.png" type="Texture" id=49]
+[ext_resource path="res://anim/2t-sorry-central0012.png" type="Texture" id=50]
+[ext_resource path="res://anim/2t-sorry-central0013.png" type="Texture" id=51]
+[ext_resource path="res://anim/2t-sorry-central0014.png" type="Texture" id=52]
+[ext_resource path="res://anim/2t-sorry-central0015.png" type="Texture" id=53]
+[ext_resource path="res://anim/2t-sorry-central0016.png" type="Texture" id=54]
+[ext_resource path="res://anim/2t-sorry-central0017.png" type="Texture" id=55]
+[ext_resource path="res://anim/2t-sorry-central0018.png" type="Texture" id=56]
+[ext_resource path="res://anim/2t-sorry-central0019.png" type="Texture" id=57]
+[ext_resource path="res://anim/2t-sorry-central0020.png" type="Texture" id=58]
+[ext_resource path="res://anim/2t-sorry-central0021.png" type="Texture" id=59]
+[ext_resource path="res://anim/2t-sorry-central0022.png" type="Texture" id=60]
+[ext_resource path="res://anim/2t-sorry-central0023.png" type="Texture" id=61]
+[ext_resource path="res://anim/2t-sorry-central0024.png" type="Texture" id=62]
+[ext_resource path="res://anim/2t-sorry-central0025.png" type="Texture" id=63]
+[ext_resource path="res://anim/2t-sorry-central0026.png" type="Texture" id=64]
+[ext_resource path="res://anim/3-yin-yang0000.png" type="Texture" id=65]
+[ext_resource path="res://anim/3-yin-yang0001.png" type="Texture" id=66]
+[ext_resource path="res://anim/3-yin-yang0002.png" type="Texture" id=67]
+[ext_resource path="res://anim/2t-dragon-woman0000.png" type="Texture" id=68]
+[ext_resource path="res://anim/2t-dragon-woman0001.png" type="Texture" id=69]
+[ext_resource path="res://anim/2t-dragon-woman0002.png" type="Texture" id=70]
+[ext_resource path="res://anim/2t-dragon-woman0003.png" type="Texture" id=71]
+[ext_resource path="res://anim/2t-dragon-woman0004.png" type="Texture" id=72]
+[ext_resource path="res://anim/2t-dragon-woman0005.png" type="Texture" id=73]
+[ext_resource path="res://anim/2t-dragon-woman0006.png" type="Texture" id=74]
+[ext_resource path="res://anim/2t-dragon-woman0007.png" type="Texture" id=75]
+[ext_resource path="res://anim/2t-dragon-woman0008.png" type="Texture" id=76]
+[ext_resource path="res://anim/2t-dragon-woman0009.png" type="Texture" id=77]
+[ext_resource path="res://anim/2t-dragon-woman0010.png" type="Texture" id=78]
+[ext_resource path="res://anim/2t-dragon-woman0011.png" type="Texture" id=79]
+[ext_resource path="res://anim/2t-dragon-woman0012.png" type="Texture" id=80]
+[ext_resource path="res://anim/2t-dragon-woman0013.png" type="Texture" id=81]
+[ext_resource path="res://anim/2t-dragon-woman0014.png" type="Texture" id=82]
+[ext_resource path="res://anim/2t-dragon-woman0015.png" type="Texture" id=83]
+[ext_resource path="res://anim/2t-dragon-woman0016.png" type="Texture" id=84]
+[ext_resource path="res://anim/2t-dragon-woman0017.png" type="Texture" id=85]
+[ext_resource path="res://anim/2t-dragon-woman0018.png" type="Texture" id=86]
+[ext_resource path="res://anim/2t-dragon-woman0019.png" type="Texture" id=87]
+[ext_resource path="res://anim/2t-dragon-woman0020.png" type="Texture" id=88]
+[ext_resource path="res://anim/2t-dragon-woman0021.png" type="Texture" id=89]
+[ext_resource path="res://anim/2t-dragon-woman0022.png" type="Texture" id=90]
+[ext_resource path="res://anim/2t-dragon-woman0023.png" type="Texture" id=91]
+[ext_resource path="res://anim/2t-dragon-woman0024.png" type="Texture" id=92]
+[ext_resource path="res://anim/2t-dragon-woman0025.png" type="Texture" id=93]
+[ext_resource path="res://anim/2t-dragon-woman0026.png" type="Texture" id=94]
+[ext_resource path="res://anim/2t-dragon-woman0027.png" type="Texture" id=95]
+[ext_resource path="res://anim/2t-dragon-woman0028.png" type="Texture" id=96]
+[ext_resource path="res://anim/2t-dragon-man0000.png" type="Texture" id=97]
+[ext_resource path="res://anim/2t-dragon-man0001.png" type="Texture" id=98]
+[ext_resource path="res://anim/2t-dragon-man0002.png" type="Texture" id=99]
+[ext_resource path="res://anim/2t-dragon-man0003.png" type="Texture" id=100]
+[ext_resource path="res://anim/2t-dragon-man0004.png" type="Texture" id=101]
+[ext_resource path="res://anim/2t-dragon-man0005.png" type="Texture" id=102]
+[ext_resource path="res://anim/2t-dragon-man0006.png" type="Texture" id=103]
+[ext_resource path="res://anim/2t-dragon-man0007.png" type="Texture" id=104]
+[ext_resource path="res://anim/2t-dragon-man0008.png" type="Texture" id=105]
+[ext_resource path="res://anim/2t-dragon-man0009.png" type="Texture" id=106]
+[ext_resource path="res://anim/2t-dragon-man0010.png" type="Texture" id=107]
+[ext_resource path="res://anim/2t-dragon-man0011.png" type="Texture" id=108]
+[ext_resource path="res://anim/2t-dragon-man0012.png" type="Texture" id=109]
+[ext_resource path="res://anim/2t-dragon-man0013.png" type="Texture" id=110]
+[ext_resource path="res://ui/repeat-tuto.tscn" type="PackedScene" id=111]
+[ext_resource path="res://ui/HUD.tscn" type="PackedScene" id=112]
+[ext_resource path="res://ui/HUD2.tscn" type="PackedScene" id=113]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "default",
+"speed": 6.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+
+animations = [ {
+"frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "default",
+"speed": 6.0
+} ]
+
+[sub_resource type="Animation" id=3]
+
+resource_name = "timer_sorry"
+length = 3.5
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Timer_sorry/Nodetimersorry:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="SpriteFrames" id=4]
+
+animations = [ {
+"frames": [ ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 23 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 23 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 23 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 23 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 23 ), ExtResource( 22 ) ],
+"loop": false,
+"name": "default",
+"speed": 6.0
+} ]
+
+[sub_resource type="SpriteFrames" id=5]
+
+animations = [ {
+"frames": [ ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ) ],
+"loop": false,
+"name": "default",
+"speed": 6.0
+} ]
+
+[sub_resource type="Animation" id=6]
+
+resource_name = "curtain"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("bg_love_left:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -640, 0 ), Vector2( 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("bg_love_right:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1280, 0 ), Vector2( 640, 0 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+
+resource_name = "lovers"
+length = 4.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("sorry_man_love:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -416.458, 397.494 ), Vector2( 413.542, 397.494 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("sorry_woman_love:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1709.03, 360.063 ), Vector2( 853.03, 360.063 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+
+resource_name = "timer"
+length = 3.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Timer/Nodetimer:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+
+[sub_resource type="SpriteFrames" id=9]
+
+animations = [ {
+"frames": [ ExtResource( 39 ), ExtResource( 39 ), ExtResource( 39 ), ExtResource( 39 ), ExtResource( 39 ), ExtResource( 39 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ) ],
+"loop": false,
+"name": "default",
+"speed": 6.0
+} ]
+
+[sub_resource type="Animation" id=10]
+
+length = 5.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("yin-yang:rotation_degrees")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -360.0, 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("yin-yang:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.001, 0.001 ), Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="SpriteFrames" id=11]
+
+animations = [ {
+"frames": [ ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 67 ), ExtResource( 67 ) ],
+"loop": true,
+"name": "default",
+"speed": 6.0
+} ]
+
+[sub_resource type="SpriteFrames" id=12]
+
+animations = [ {
+"frames": [ ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 94 ), ExtResource( 95 ), ExtResource( 96 ) ],
+"loop": false,
+"name": "default",
+"speed": 6.0
+} ]
+
+[sub_resource type="SpriteFrames" id=13]
+
+animations = [ {
+"frames": [ ExtResource( 97 ), ExtResource( 98 ), ExtResource( 99 ), ExtResource( 100 ), ExtResource( 101 ), ExtResource( 102 ), ExtResource( 103 ), ExtResource( 104 ), ExtResource( 105 ), ExtResource( 106 ), ExtResource( 107 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 110 ) ],
+"loop": false,
+"name": "default",
+"speed": 6.0
+} ]
+
+[node name="fury" type="Node2D"]
+
+script = ExtResource( 1 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="background" parent="." instance=ExtResource( 2 )]
+
+[node name="Anim_fury_woman" type="AnimatedSprite" parent="."]
+
+position = Vector2( 808.091, 348.021 )
+frames = SubResource( 1 )
+animation = "default"
+frame = 4
+playing = true
+_sections_unfolded = [ "Transform" ]
+
+[node name="Anim_fury_man" type="AnimatedSprite" parent="."]
+
+position = Vector2( 400.091, 335.021 )
+frames = SubResource( 2 )
+animation = "default"
+frame = 4
+playing = true
+_sections_unfolded = [ "Transform" ]
+
+[node name="Timer_sorry" type="AnimationPlayer" parent="."]
+
+editor/display_folded = true
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
+anims/timer_sorry = SubResource( 3 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="Nodetimersorry" type="Node2D" parent="Timer_sorry"]
+
+_sections_unfolded = [ "Transform" ]
+
+[node name="sorry_man" type="AnimatedSprite" parent="."]
+
+visible = false
+position = Vector2( 399.122, 319.417 )
+frames = SubResource( 4 )
+animation = "default"
+
+[node name="sorry_woman" type="AnimatedSprite" parent="."]
+
+visible = false
+position = Vector2( 801.686, 347.746 )
+frames = SubResource( 5 )
+animation = "default"
+
+[node name="CurtainPlayer" type="AnimationPlayer" parent="."]
+
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
+anims/curtain = SubResource( 6 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+_sections_unfolded = [ "Playback Options", "playback" ]
+
+[node name="bg_love_left" type="ColorRect" parent="."]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -640.0
+margin_bottom = 720.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0, 0, 0, 1 )
+_sections_unfolded = [ "Rect" ]
+
+[node name="bg_love_right" type="ColorRect" parent="."]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1280.0
+margin_right = 1920.0
+margin_bottom = 720.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0, 0, 0, 1 )
+_sections_unfolded = [ "Rect" ]
+
+[node name="LoversPlayer" type="AnimationPlayer" parent="."]
+
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
+anims/lovers = SubResource( 7 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="sorry_man_love" type="Sprite" parent="."]
+
+position = Vector2( -416.458, 397.494 )
+texture = ExtResource( 37 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="sorry_woman_love" type="Sprite" parent="."]
+
+position = Vector2( 1709.03, 360.063 )
+texture = ExtResource( 38 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Timer" type="AnimationPlayer" parent="."]
+
+editor/display_folded = true
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
+anims/timer = SubResource( 8 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="Nodetimer" type="Node2D" parent="Timer"]
+
+_sections_unfolded = [ "Transform" ]
+
+[node name="sorry_central" type="AnimatedSprite" parent="."]
+
+visible = false
+position = Vector2( 627.863, 419.3 )
+frames = SubResource( 9 )
+animation = "default"
+
+[node name="YinYangPlayer" type="AnimationPlayer" parent="."]
+
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+root_node = NodePath("..")
+anims/yin-yang = SubResource( 10 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="yin-yang" type="AnimatedSprite" parent="."]
+
+visible = false
+position = Vector2( 616.592, 280.63 )
+rotation = -6.28319
+scale = Vector2( 0.001, 0.001 )
+frames = SubResource( 11 )
+animation = "default"
+playing = true
+_sections_unfolded = [ "Transform" ]
+
+[node name="dragon_woman" type="AnimatedSprite" parent="."]
+
+visible = false
+position = Vector2( 732.787, 360 )
+frames = SubResource( 12 )
+animation = "default"
+_sections_unfolded = [ "Transform" ]
+
+[node name="dragon_man" type="AnimatedSprite" parent="."]
+
+visible = false
+position = Vector2( 243, 361 )
+frames = SubResource( 13 )
+animation = "default"
+
+[node name="Button_man" type="TextureButton" parent="."]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 197.0
+margin_top = 32.0
+margin_right = 574.0
+margin_bottom = 646.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+
+[node name="Button_woman" type="TextureButton" parent="."]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 577.0
+margin_top = 6.0
+margin_right = 1094.0
+margin_bottom = 676.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+
+[node name="repeat-tuto" parent="." instance=ExtResource( 111 )]
+
+position = Vector2( -61, 0 )
+
+[node name="HUD" parent="." instance=ExtResource( 112 )]
+
+[node name="HUD2" parent="." instance=ExtResource( 113 )]
+
+[connection signal="animation_finished" from="Timer_sorry" to="." method="_on_Timer_sorry_animation_finished"]
+
+[connection signal="animation_finished" from="CurtainPlayer" to="." method="_on_CurtainPlayer_animation_finished"]
+
+[connection signal="animation_finished" from="LoversPlayer" to="." method="_on_LoversPlayer_animation_finished"]
+
+[connection signal="animation_finished" from="Timer" to="." method="_on_Timer_animation_finished"]
+
+[connection signal="animation_finished" from="sorry_central" to="." method="_on_sorry_central_animation_finished"]
+
+[connection signal="animation_finished" from="YinYangPlayer" to="." method="_on_YinYangPlayer_animation_finished"]
+
+[connection signal="animation_finished" from="dragon_woman" to="." method="_on_dragon_woman_animation_finished"]
+
+[connection signal="pressed" from="Button_man" to="." method="_on_Button_man_pressed"]
+
+[connection signal="pressed" from="Button_woman" to="." method="_on_Button_woman_pressed"]
+
+

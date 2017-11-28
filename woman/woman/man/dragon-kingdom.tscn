@@ -1,0 +1,82 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://anim/4-dragon-kingdom-dragon0004.png" type="Texture" id=1]
+[ext_resource path="res://anim/4-dragon-kingdom-dragon0000.png" type="Texture" id=2]
+[ext_resource path="res://anim/4-dragon-kingdom-dragon0001.png" type="Texture" id=3]
+[ext_resource path="res://anim/4-dragon-kingdom-dragon0002.png" type="Texture" id=4]
+[ext_resource path="res://anim/4-dragon-kingdom-dragon0003.png" type="Texture" id=5]
+[ext_resource path="res://anim/4-dragon-kingdom-princess0000.png" type="Texture" id=6]
+[ext_resource path="res://anim/4-dragon-kingdom-princess0001.png" type="Texture" id=7]
+[ext_resource path="res://anim/4-dragon-kingdom-princess0002.png" type="Texture" id=8]
+[ext_resource path="res://anim/4-dragon-kingdom-princess0003.png" type="Texture" id=9]
+[ext_resource path="res://anim/4-dragon-kingdom-princess0004.png" type="Texture" id=10]
+[ext_resource path="res://anim/4-dragon-kingdom-princess0005.png" type="Texture" id=11]
+[ext_resource path="res://ui/retry.tscn" type="PackedScene" id=12]
+[ext_resource path="res://ui/HUD.tscn" type="PackedScene" id=13]
+[ext_resource path="res://ui/HUD2.tscn" type="PackedScene" id=14]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 1 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 1 ), ExtResource( 1 ), ExtResource( 1 ), ExtResource( 1 ), ExtResource( 1 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 6.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+
+animations = [ {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "default",
+"speed": 6.0
+} ]
+_sections_unfolded = [ "Resource" ]
+
+[node name="dragon-kingdom" type="Node2D"]
+
+[node name="bg" type="ColorRect" parent="."]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1280.0
+margin_bottom = 720.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0, 0, 0, 1 )
+_sections_unfolded = [ "Rect" ]
+
+[node name="dragon" type="AnimatedSprite" parent="."]
+
+position = Vector2( 639, 360 )
+scale = Vector2( 1, 1 )
+frames = SubResource( 1 )
+animation = "default"
+frame = 9
+playing = true
+_sections_unfolded = [ "Transform" ]
+
+[node name="princess" type="AnimatedSprite" parent="."]
+
+position = Vector2( 230.381, 180.478 )
+scale = Vector2( 1, 1 )
+frames = SubResource( 2 )
+animation = "default"
+frame = 9
+playing = true
+
+[node name="retry" parent="." instance=ExtResource( 12 )]
+
+scale = Vector2( 1, 1 )
+
+[node name="HUD" parent="." instance=ExtResource( 13 )]
+
+[node name="HUD2" parent="." instance=ExtResource( 14 )]
+
+

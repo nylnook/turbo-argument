@@ -1,0 +1,222 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://ui/start-menu.gd" type="Script" id=1]
+[ext_resource path="res://anim/ui/start0000.png" type="Texture" id=2]
+[ext_resource path="res://anim/ui/start0001.png" type="Texture" id=3]
+[ext_resource path="res://ui/font/chawp55.font" type="BitmapFont" id=4]
+[ext_resource path="res://ui/font/chawp20.font" type="BitmapFont" id=5]
+[ext_resource path="res://anim/ui/french.png" type="Texture" id=6]
+[ext_resource path="res://anim/ui/english.png" type="Texture" id=7]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="start-menu" type="Node2D"]
+
+script = ExtResource( 1 )
+
+[node name="background block" type="ColorRect" parent="."]
+
+modulate = Color( 0, 0, 0, 0 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1280.0
+margin_bottom = 720.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 1, 1, 1, 1 )
+_sections_unfolded = [ "Focus", "Mouse", "Rect", "Visibility" ]
+
+[node name="TitleAnimatedSprite" type="AnimatedSprite" parent="."]
+
+position = Vector2( 646.999, 352.001 )
+frames = SubResource( 1 )
+animation = "default"
+playing = true
+
+[node name="Title" type="Label" parent="TitleAnimatedSprite"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -185.0
+margin_top = -98.0
+margin_right = 150.0
+margin_bottom = 89.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "TITLE"
+align = 1
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "BBCode", "Rect", "Theme", "custom_colors", "custom_fonts" ]
+
+[node name="Click me" type="Label" parent="TitleAnimatedSprite"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -185.0
+margin_top = 37.0
+margin_right = 149.0
+margin_bottom = 77.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "CLICK_ME"
+align = 1
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "BBCode", "Rect", "custom_colors", "custom_fonts" ]
+
+[node name="StartButton" type="TextureButton" parent="TitleAnimatedSprite"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -268.0
+margin_top = -166.0
+margin_right = 248.0
+margin_bottom = 142.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+
+[node name="Sprite french" type="Sprite" parent="."]
+
+position = Vector2( 738.969, 662.001 )
+texture = ExtResource( 6 )
+
+[node name="French" type="Label" parent="Sprite french"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 61.0
+margin_top = -28.0
+margin_right = 179.0
+margin_bottom = -4.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "FRENCH"
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "BBCode", "Rect", "custom_colors", "custom_fonts" ]
+
+[node name="FrenchButton" type="TextureButton" parent="Sprite french"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -40.0
+margin_top = -25.0
+margin_right = 191.0
+margin_bottom = 24.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+
+[node name="Sprite english" type="Sprite" parent="."]
+
+position = Vector2( 446.969, 654.001 )
+texture = ExtResource( 7 )
+
+[node name="English" type="Label" parent="Sprite english"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 64.0
+margin_top = -25.0
+margin_right = 170.0
+margin_bottom = 8.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "ENGLISH"
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "BBCode", "custom_colors", "custom_fonts" ]
+
+[node name="EnglishButton" type="TextureButton" parent="Sprite english"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -44.0
+margin_top = -24.0
+margin_right = 192.0
+margin_bottom = 28.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+
+[connection signal="pressed" from="TitleAnimatedSprite/StartButton" to="." method="_on_StartButton_pressed"]
+
+[connection signal="pressed" from="Sprite french/FrenchButton" to="." method="_on_FrenchButton_pressed"]
+
+[connection signal="pressed" from="Sprite english/EnglishButton" to="." method="_on_EnglishButton_pressed"]
+
+
