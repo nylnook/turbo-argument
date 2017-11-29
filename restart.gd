@@ -1,8 +1,8 @@
 extends Node2D
 
-# preload next scenes
-onready var bearscene = get_node("/root/global").preload_scene("res://man/bear.tscn")
-onready var furyscene = get_node("/root/global").preload_scene("res://woman/fury.tscn")
+# animation vars
+onready var button_man = get_node("Button_man")
+onready var button_woman = get_node("Button_woman")
 
 func _ready():
 	# Called every time the node is added to the scene.
@@ -12,10 +12,18 @@ func _ready():
 
 
 func _on_ManButton_pressed():
+	# hide buttons to avoid second click
+	button_woman.hide()
+	button_man.hide()
+	# play intro
 	get_node("repeat-tuto").hide()
 	get_node("intro").choose_man()
 
 
 func _on_WomanButton_pressed():
+	# hide buttons to avoid second click
+	button_woman.hide()
+	button_man.hide()
+	# play intro
 	get_node("repeat-tuto").hide()
 	get_node("intro").choose_woman()

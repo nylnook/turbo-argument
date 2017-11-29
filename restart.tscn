@@ -110,7 +110,7 @@ offset = Vector2( 7.47424, -0.120605 )
 
 position = Vector2( 0, -58 )
 
-[node name="ManButton" type="TextureButton" parent="."]
+[node name="Button_man" type="TextureButton" parent="."]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -130,7 +130,7 @@ enabled_focus_mode = 2
 shortcut = null
 group = null
 
-[node name="WomanButton" type="TextureButton" parent="."]
+[node name="Button_woman" type="TextureButton" parent="."]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -156,8 +156,8 @@ group = null
 
 position = Vector2( 860.666, 145.894 )
 
-[connection signal="pressed" from="ManButton" to="." method="_on_ManButton_pressed"]
+[connection signal="pressed" from="Button_man" to="." method="_on_ManButton_pressed"]
 
-[connection signal="pressed" from="WomanButton" to="." method="_on_WomanButton_pressed"]
+[connection signal="pressed" from="Button_woman" to="." method="_on_WomanButton_pressed"]
 
 
