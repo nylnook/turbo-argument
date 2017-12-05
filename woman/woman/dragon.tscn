@@ -253,7 +253,7 @@ script = ExtResource( 1 )
 position = Vector2( 147.939, 381.724 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 2
+frame = 3
 playing = true
 
 [node name="DragonWoman" type="AnimatedSprite" parent="."]
@@ -261,7 +261,7 @@ playing = true
 position = Vector2( 640, 360 )
 frames = SubResource( 2 )
 animation = "default"
-frame = 9
+frame = 5
 playing = true
 _sections_unfolded = [ "Transform" ]
 

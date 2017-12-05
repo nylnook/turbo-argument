@@ -95,35 +95,34 @@ animations = [ {
 "speed": 6.0
 } ]
 
-[sub_resource type="Animation" id=14]
+[sub_resource type="Animation" id=4]
 
 resource_name = "frame4"
 length = 0.1
 loop = false
 step = 0.1
 
-[sub_resource type="Animation" id=10]
+[sub_resource type="Animation" id=5]
 
 resource_name = "frame3"
 length = 2.0
 loop = false
 step = 0.1
 
-[sub_resource type="Animation" id=11]
+[sub_resource type="Animation" id=6]
 
 resource_name = "frame2"
 length = 2.0
 loop = false
 step = 0.1
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=7]
 
-resource_name = "frame1"
 length = 2.0
 loop = false
 step = 0.1
 
-[sub_resource type="Animation" id=12]
+[sub_resource type="Animation" id=8]
 
 resource_name = "frame5"
 length = 4.0
@@ -152,7 +151,7 @@ tracks/1/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="Animation" id=13]
+[sub_resource type="Animation" id=9]
 
 resource_name = "frame6"
 length = 2.0
@@ -170,7 +169,7 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="SpriteFrames" id=9]
+[sub_resource type="SpriteFrames" id=10]
 
 animations = [ {
 "frames": [ ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), null, null, null, null, null, null, null, null, null, null, null, null ],
@@ -190,7 +189,7 @@ script = ExtResource( 1 )
 position = Vector2( 309.031, 340.196 )
 frames = SubResource( 1 )
 animation = "default"
-frame = 17
+frame = 15
 playing = true
 
 [node name="AreYouCrazy_Dragon" type="AnimatedSprite" parent="."]
@@ -198,7 +197,7 @@ playing = true
 position = Vector2( 923.125, 433.848 )
 frames = SubResource( 2 )
 animation = "default"
-frame = 17
+frame = 15
 playing = true
 
 [node name="Man_wait" type="Sprite" parent="."]
@@ -219,7 +218,7 @@ animation = "default"
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 root_node = NodePath("..")
-anims/frame4 = SubResource( 14 )
+anims/frame4 = SubResource( 4 )
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
@@ -247,7 +246,7 @@ _sections_unfolded = [ "Rect" ]
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 root_node = NodePath("..")
-anims/frame3 = SubResource( 10 )
+anims/frame3 = SubResource( 5 )
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
@@ -257,7 +256,6 @@ autoplay = ""
 
 visible = false
 position = Vector2( 998, 360 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 28 )
 _sections_unfolded = [ "Transform" ]
 
@@ -266,7 +264,7 @@ _sections_unfolded = [ "Transform" ]
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 root_node = NodePath("..")
-anims/frame2 = SubResource( 11 )
+anims/frame2 = SubResource( 6 )
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
@@ -276,7 +274,6 @@ autoplay = ""
 
 visible = false
 position = Vector2( 548, 355 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 29 )
 _sections_unfolded = [ "Transform" ]
 
@@ -285,7 +282,7 @@ _sections_unfolded = [ "Transform" ]
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 root_node = NodePath("..")
-anims/frame1 = SubResource( 5 )
+anims/frame1 = SubResource( 7 )
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
@@ -295,7 +292,6 @@ autoplay = ""
 
 visible = false
 position = Vector2( 183.007, 360 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 30 )
 _sections_unfolded = [ "Transform" ]
 
@@ -304,7 +300,7 @@ _sections_unfolded = [ "Transform" ]
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 root_node = NodePath("..")
-anims/frame5 = SubResource( 12 )
+anims/frame5 = SubResource( 8 )
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
@@ -321,7 +317,6 @@ _sections_unfolded = [ "Visibility" ]
 
 visible = false
 position = Vector2( 640, 360 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 32 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
@@ -347,7 +342,7 @@ _sections_unfolded = [ "Rect", "Visibility" ]
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 root_node = NodePath("..")
-anims/frame6 = SubResource( 13 )
+anims/frame6 = SubResource( 9 )
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
@@ -358,7 +353,6 @@ autoplay = ""
 visible = false
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 682, 511 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 33 )
 _sections_unfolded = [ "Transform", "Visibility" ]
 
@@ -366,8 +360,7 @@ _sections_unfolded = [ "Transform", "Visibility" ]
 
 visible = false
 position = Vector2( 640, 360 )
-scale = Vector2( 1, 1 )
-frames = SubResource( 9 )
+frames = SubResource( 10 )
 animation = "default"
 _sections_unfolded = [ "Transform", "Visibility" ]
 

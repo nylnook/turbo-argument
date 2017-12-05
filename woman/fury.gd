@@ -29,7 +29,7 @@ func choose_man():
 	button_woman.hide()
 	button_man.hide()
 	# preload next scene
-	get_node("/root/global").preload_next_scene("res://woman/man/yin-yang.tscn")
+	get_node("/root/global").preload_interactive_next_scene("res://woman/man/yin-yang.tscn")
 	# hide tuto
 	get_node("repeat-tuto").hide()
 	# play animations
@@ -85,7 +85,7 @@ func choose_woman():
 	button_woman.hide()
 	button_man.hide()
 	# preload next scene
-	get_node("/root/global").preload_next_scene("res://woman/woman/dragon.tscn")
+	get_node("/root/global").preload_interactive_next_scene("res://woman/woman/dragon.tscn")
 	# hide tuto
 	get_node("repeat-tuto").hide()
 	# play animations
